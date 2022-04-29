@@ -10,10 +10,9 @@ const IndexPage = () => {
   return (
     <Layout pageTitle="Home Page">
       <div className={intro}>
-      <h2 className={heading}>Trading Algorithm</h2>
-        Our custom trading algorithm makes it easy for the average person to know when to buy and sell their stocks! Work with us and
-        make easy money from the comfort of your own home.
-        <Link to="/about"><br/>Click here to learn more!</Link>
+      <h2 className={heading}>DC Union</h2>
+        View all of the current events going on around DC and even add your own!
+        <Link to="/form"><br/>Click here to input an upcoming event</Link>
         </div>
       <div className={mainContent}>
       </div>

@@ -34,7 +34,7 @@ export default class FormPage extends React.Component{
         your trading journey. Our team will contact you as soon as possible. </div>
         <form onSubmit={this.handleSubmit} className={form}>
             <label className={formBlocks}>
-            First Name:&nbsp;
+            Event Name:&nbsp;
             <input className={inputBox}
                 type="text"
                 name="firstName"
@@ -43,7 +43,7 @@ export default class FormPage extends React.Component{
             />
             </label>
             <label className={formBlocks}>
-            Last Name:&nbsp;
+            Event Date(MM/DD/YYYY):&nbsp;
             <input className={inputBox}
                 type="text"
                 name="lastName"
@@ -52,7 +52,7 @@ export default class FormPage extends React.Component{
             />
             </label>
             <label className={formBlocks}>
-            E-mail:&nbsp;
+            Event Location:&nbsp;
             <input className={inputBox}
                 type="text"
                 name="email"
@@ -61,7 +61,16 @@ export default class FormPage extends React.Component{
             />
             </label>
             <label className={formBlocks}>
-            Phone:&nbsp;
+            Description #:&nbsp;
+            <input className={inputBox}
+                type="text"
+                name="phone"
+                value={this.state.phone}
+                onChange={this.handleInputChange}
+            />
+            </label>
+            <label className={formBlocks}>
+            Contact #:&nbsp;
             <input className={inputBox}
                 type="text"
                 name="phone"
@@ -70,22 +79,6 @@ export default class FormPage extends React.Component{
             />
             </label>
             <br/>
-
-            <div class={radioButtons}>
-            <p>Available capital: </p>
-            <br/>
-            <input type="radio" id="option0" name="money" value="0"/>
-            <label className={individualRadio} for="option0">Below $10,000</label><br/>
-            <br/>
-            <input type="radio" id="option1" name="money" value="10,000"/>
-            <label className={individualRadio} for="option1">$10,000-$50,000</label><br/>
-            <br/>
-            <input type="radio" id="option2" name="money" value="50,000"/>
-            <label className={individualRadio} for="option2">$50,000-$150,000</label><br/>  
-            <br/>
-            <input type="radio" id="option3" name="money" value="150,000"/>
-            <label className={individualRadio} for="option3">Above $150,000</label><br/>
-            </div>
             
             <button type="submit" className={submitButton} >Submit</button>
         </form>
