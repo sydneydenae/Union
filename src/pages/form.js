@@ -23,6 +23,16 @@ export default class FormPage extends React.Component{
     handleSubmit = event => {
         event.preventDefault()
         alert(`Thank you for submitting the ${this.state.eventName} in ${this.state.location}!`)
+        const eventName = this.state.eventName
+        const date = this.state.date
+        const location = this.state.location
+        const description = this.state.description
+        const contact = this.state.contact
+        alert(eventName)
+        alert(date)
+        alert(location)
+        alert(description)
+        alert(contact)
     }
       
     render () {
