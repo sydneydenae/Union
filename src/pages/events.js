@@ -2,8 +2,6 @@
 import * as React from 'react'
 import Layout from '../components/layout'
 import {intro, heading, mainContent} from '../components/layout.module.css'
-import FormPage from './form'
-
 
 // Step 2: Define your component
 const EventPage = () => {
