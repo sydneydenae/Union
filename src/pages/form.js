@@ -1,7 +1,7 @@
 // Step 1: Import React
 import * as React from 'react'
 import Layout from '../components/layout'
-import {form, intro, heading, formBlocks, inputBox, submitButton, radioButtons, individualRadio} from '../components/layout.module.css'
+import {form, intro, heading, formBlocks, inputBox, submitButton} from '../components/layout.module.css'
 
 
 // Step 2: Define your component
@@ -22,23 +22,22 @@ export default class FormPage extends React.Component{
 
     handleSubmit = event => {
         event.preventDefault()
-        alert(`Thank you ${this.state.firstName} ${this.state.lastName} for submitting!`)
+        alert(`Thank you for submitting the ${this.state.eventName} in ${this.state.location}!`)
     }
       
     render () {
     return (
         <Layout pageTitle="Form">
         <div className={intro}>
-        <h2 className={heading}>Get started today!</h2>
-        Enter your information to recieve pricing information and further details regarding 
-        your trading journey. Our team will contact you as soon as possible. </div>
+        <h2 className={heading}>Enter an event!</h2>
+        Enter for the information for an upcoming DC event you know about that is not currently on the events calendar!</div>
         <form onSubmit={this.handleSubmit} className={form}>
             <label className={formBlocks}>
             Event Name:&nbsp;
             <input className={inputBox}
                 type="text"
-                name="firstName"
-                value={this.state.firstName}
+                name="eventName"
+                value={this.state.eventName}
                 onChange={this.handleInputChange}
             />
             </label>
@@ -46,8 +45,8 @@ export default class FormPage extends React.Component{
             Event Date(MM/DD/YYYY):&nbsp;
             <input className={inputBox}
                 type="text"
-                name="lastName"
-                value={this.state.lastName}
+                name="date"
+                value={this.state.date}
                 onChange={this.handleInputChange}
             />
             </label>
@@ -55,17 +54,17 @@ export default class FormPage extends React.Component{
             Event Location:&nbsp;
             <input className={inputBox}
                 type="text"
-                name="email"
-                value={this.state.email}
+                name="location"
+                value={this.state.location}
                 onChange={this.handleInputChange}
             />
             </label>
             <label className={formBlocks}>
-            Description #:&nbsp;
+            Description:&nbsp;
             <input className={inputBox}
                 type="text"
-                name="phone"
-                value={this.state.phone}
+                name="description"
+                value={this.state.description}
                 onChange={this.handleInputChange}
             />
             </label>
@@ -73,8 +72,8 @@ export default class FormPage extends React.Component{
             Contact #:&nbsp;
             <input className={inputBox}
                 type="text"
-                name="phone"
-                value={this.state.phone}
+                name="contact"
+                value={this.state.contact}
                 onChange={this.handleInputChange}
             />
             </label>
