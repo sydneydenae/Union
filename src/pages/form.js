@@ -25,11 +25,15 @@ export default class FormPage extends React.Component{
         alert(`Thank you for submitting the ${this.state.eventName} in ${this.state.location}!`)
         const eventName = this.state.eventName;
         const date = this.state.date
+        const startTime = this.state.startTime
+        const endTime = this.state.endTime
         const location = this.state.location
         const description = this.state.description
         const contact = this.state.contact
         alert(eventName)
         alert(date)
+        alert(startTime)
+        alert(endTime)
         alert(location)
         alert(description)
         alert(contact)
@@ -57,6 +61,24 @@ export default class FormPage extends React.Component{
                 type="text"
                 name="date"
                 value={this.state.date}
+                onChange={this.handleInputChange}
+            />
+            </label>
+            <label className={formBlocks}>
+            Start Time:&nbsp;
+            <input className={inputBox}
+                type="text"
+                name="startTime"
+                value={this.state.startTime}
+                onChange={this.handleInputChange}
+            />
+            </label>
+            <label className={formBlocks}>
+            End Time:&nbsp;
+            <input className={inputBox}
+                type="text"
+                name="endTime"
+                value={this.state.endTime}
                 onChange={this.handleInputChange}
             />
             </label>
