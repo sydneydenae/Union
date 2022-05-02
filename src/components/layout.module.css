@@ -95,12 +95,12 @@
     background-size: cover;
 }
 
-/*ABOUT*/
+/*Events*/
 .main-content2{
     height:400px;
-    background-repeat: no-repeat;
-    background-size: cover;
     padding: 150px;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -129,4 +129,10 @@
 .radio-buttons{
     font-size: 30px;
     margin: 10px;
+}
+
+.react-player{
+    flex-basis: 100%;
+    flex-grow:0;
+    flex-shrink: 0;
 }
