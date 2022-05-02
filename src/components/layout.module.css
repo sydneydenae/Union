@@ -91,6 +91,8 @@
     height:400px;
     padding: 150px;
     transition: 0.3s;
+    background-image: url("../images/dcPhoto.jpeg");
+    background-size: cover;
 }
 
 /*ABOUT*/
