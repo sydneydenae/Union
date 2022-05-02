@@ -17,7 +17,7 @@ const Layout = ({ pageTitle, children }) => {
         {children}
       </main>
       <footer className={footer}>
-      <p>&copy; Copyright TradingAlgorithm</p>
+      <p>&copy; Copyright DCunion</p>
       </footer>
     </div>
   )
